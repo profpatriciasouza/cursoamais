@@ -1,0 +1,23 @@
+.projeto .panel {
+    height: 230px;
+}
+.projeto .panel h4 {
+    height: 40px;
+}
+
+.projeto .panel .btn-info {
+    color: #fff !important;
+    float: right;
+}
+
+#progress {
+    display: none;
+}
+
+img.thumb.media-object {
+    max-width: 50px;
+}
+
+.in a {
+    color: white;
+}

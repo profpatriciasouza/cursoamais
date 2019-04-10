@@ -1,0 +1,1 @@
+<option value="<?php echo $this->value; ?>" <?php echo $this->getAttributes(); ?> ><?php echo $this->content; ?></option>

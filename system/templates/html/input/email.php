@@ -1,0 +1,1 @@
+<?php $this->getFile("/html/input/text"); ?>

@@ -1,0 +1,9 @@
+.chats li.in .message {
+    margin-left: 0px !important;
+}
+.chats li.out .message {
+    margin-right: 0px !important;
+}
+.normal-chat li.in .name {
+    color: #424f63 !important;
+}

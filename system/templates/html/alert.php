@@ -1,0 +1,1 @@
+<div class="alert <?php echo $this->class; ?>"  <?php echo $this->getAttributes(); ?>><?php echo $this->msg; ?></div>

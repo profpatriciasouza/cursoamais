@@ -1,0 +1,1 @@
+<button id="<?php echo $this->id; ?>" type="<?php echo $this->type; ?>" <?php echo $this->getAttributes(array("class")); ?> class="btn btn-default <?php echo $this->class; ?>"><?php echo $this->label; ?></button>

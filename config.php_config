@@ -1,0 +1,59 @@
+<?php
+
+/*
+ * Sistema desenvolvido por duet22
+ * http://www.duet22.com
+ *
+ * Desenvolvedor Lucas Schirm Caixeta
+ * lucas@duet22.com
+ * +55 31 8572-3604
+ */
+
+error_reporting(-1);
+System_CONFIG::load(array(
+    'seo-tittle' => "CursosAMais"
+    , 'isLocalhost' => preg_match("/localhost/", $_SERVER['SERVER_NAME'])
+    , 'base' => dirname(__FILE__)
+    , 'upload_dir' => dirname(__FILE__) . "/uploads/"
+    , 'upload_url' => "/uploads/"
+    /* , 'SMTP_SECURE' => "ssl" */
+    , 'SMTP_HOST' => "localhost"
+    , 'SMTP_PORT' => "25"
+    , 'SMTP_USERNAME' => ""
+    , 'SMTP_PASSWORD' => ""
+    , 'db' => array(
+        'default' => array(
+          'host' => 'localhost'
+          , 'user' => ''
+          , 'pass' => ''
+          , 'db' => ''
+        ),
+         'cursosamais.duet22.com' => array(
+           'host' => 'localhost'
+           , 'user' => ''
+           , 'pass' => ''
+           , 'db' => ''
+        ),
+        'cursosamais.com.br' => array(
+            'host' => 'localhost'
+            , 'user' => ''
+            , 'pass' => ''
+            , 'db' => ''
+        )
+    ),
+    /*
+     * Aqui é o mapa do site, basicamente para separarmos os arquivos em áreas
+     * importantes, as sessões também são separadas pelo mapa, tornando mais
+     * fácil a utilização de várias sessões distintas, sem ter de inventar muita
+     * moda.
+     *
+     * lucas@ogenial.com.br
+     *
+     * You can't have a map named as Folder or Default
+     */
+    'map' => array(
+        'folder' => "acesso.php"
+        , 'folder-in-root' => false
+        , 'default' => "publico"
+    )
+));

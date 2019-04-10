@@ -1,0 +1,74 @@
+body {
+    background-color: #424f63;
+}
+.heading-block h4{
+	text-transform: none;
+	font-size: 18px;
+}
+
+h2.center{
+	text-transform: uppercase;
+}
+
+
+
+#page-title{
+	    background-image: url("images/religiao.jpg");
+}
+
+
+
+#top-cart{
+	margin-right: 26px;
+}
+
+#logo img {
+    height: auto !important;
+}
+div#logo {
+    max-width: 201px;
+    margin-top: 17px !important;
+}
+
+section#slider {
+    margin-top: 0px;
+    padding-top: 0px;
+}
+
+
+.whats{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    bottom: 50px;
+    right: 0;
+    z-index: 9999;
+}
+.specs{
+    margin-left: 20px;
+}
+.specs li{
+    line-height: 30px;
+}
+p{
+    line-height: 30px;
+    margin-bottom: 15px;
+}
+.btn-matriula{
+    margin:0 auto;
+    margin-bottom: 40px;
+    display: block;
+}
+.btn-matriula a{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+.col_half{
+    margin-right: 2% !important;
+}
+.content-cad{
+    padding: 20px;
+    padding-left: 30px;
+}

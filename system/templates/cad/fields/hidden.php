@@ -1,0 +1,1 @@
+<input type="hidden" name="<?= $this->fieldName ?>" id="<?= $this->id ?>" value="<?= $this->value ?>" />

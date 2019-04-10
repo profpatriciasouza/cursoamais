@@ -1,0 +1,15 @@
+#progress {
+    display: none;
+}
+
+.delete-file {
+    cursor: pointer;
+}
+
+.arquivo {
+    padding: 5px;
+}
+div#enviar-foto {
+  margin-left: 15px;
+  float: left;
+}

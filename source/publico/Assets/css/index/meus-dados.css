@@ -1,0 +1,11 @@
+#foto {
+    text-align: center;
+}
+
+#enviar-foto {
+    margin-top: 20px;
+}
+
+#progress {
+    display: none;
+}
