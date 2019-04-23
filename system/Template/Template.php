@@ -8,13 +8,13 @@ class Template {
     public $description;
 
     public function __construct() {
-        
+
     }
 
-    public function head() { 
+    public function head() {
         $this->getFile("head.php");
     }
-    
+
     public function getHeader($params = array()) {
         $this->getFile("header.php", $params);
     }
@@ -53,12 +53,12 @@ class Template {
         return "/" . Map::$area . "/" . Map::$modulo . "/" . Map::$acao . "/?m=" . $this->method . "&a=" . $this->action;
     }
 
-    
+
 
     public function getBodyClass($class = "") {
         return "class='" . Map::$area . " " . Map::$modulo . " " . Map::$acao . " " . $class . "'";
     }
-    
+
     public function isUrl($area, $modulo = "", $acao = "") {
         if (Map::$area == $area && (empty($modulo) || Map::$modulo == $modulo) && (empty($acao) || Map::$acao == $acao)) {
             return true;
@@ -136,6 +136,7 @@ class Template {
 
         if (is_array(Template::$assets)) {
             foreach (Template::$assets as $k => $asset) {
+              var_dump($asset);
                 if (end(explode(".", $asset)) == $type) {
                     unset(Template::$assets[$k]);
                     $this->loadAsset($asset, end(explode(".", $asset)));
@@ -161,7 +162,7 @@ class Template {
 
     public function loadAsset($file, $type = "js") {
         $file = str_replace("//", "/", $file);
-        
+
         if ($type == "js") {
             echo '<script type="text/javascript" src="' . $file . '"></script>';
         }

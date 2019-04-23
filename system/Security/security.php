@@ -43,11 +43,16 @@ class Security {
     }
 
     static function registerUser($user) {
-        $_SESSION[Map::getSessionNameSpace()]['user'] = $user;
+        $_SESSION[Map::getSessionNameSpace()]['user'] = serialize($user);
     }
 
     static function get($data) {
+      if (!is_object($_SESSION[Map::getSessionNameSpace()]['user'])) {
+        $user_name = unserialize($_SESSION[Map::getSessionNameSpace()]['user']);
+        return isset($user_name) ? $user_name->$data : "";
+      } else {
         return isset($_SESSION[Map::getSessionNameSpace()]['user']) ? $_SESSION[Map::getSessionNameSpace()]['user']->$data : "";
+      }
     }
 
     static function revokeAccess() {

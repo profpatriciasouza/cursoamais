@@ -14,4 +14,3 @@ require_once(dirname(__FILE__) . "/system/Mailer/mailer.php");
 require_once(dirname(__FILE__) . "/system/Encoding/Encoding.php");
 
 require_once(dirname(__FILE__) . "/config.php");
-

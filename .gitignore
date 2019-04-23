@@ -1,3 +1,5 @@
 .DS_Store
 config.php
 PagSeguroLibrary/config/PagSeguroConfigWrapper.php
+uploads/*
+.htaccess
