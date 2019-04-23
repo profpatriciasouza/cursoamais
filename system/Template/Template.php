@@ -136,10 +136,10 @@ class Template {
 
         if (is_array(Template::$assets)) {
             foreach (Template::$assets as $k => $asset) {
-              var_dump($asset);
-                if (end(explode(".", $asset)) == $type) {
+                $explodeAsset = explode(".", $asset);
+                if (end($explodeAsset) == $type) {
                     unset(Template::$assets[$k]);
-                    $this->loadAsset($asset, end(explode(".", $asset)));
+                    $this->loadAsset($asset, end($explodeAsset));
                 }
             }
         }
