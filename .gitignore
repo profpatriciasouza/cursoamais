@@ -3,3 +3,4 @@ config.php
 PagSeguroLibrary/config/PagSeguroConfigWrapper.php
 uploads/*
 .htaccess
+liberacoes.log
